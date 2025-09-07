@@ -56,11 +56,13 @@ body{min-height:100vh;display:flex;background:linear-gradient(135deg,#1e0036 0%,
 
 /* Footer fixed at bottom */
 .Footer {
+  display: flex;
   margin-top: auto; 
   color: #140018;
   background: linear-gradient(90deg, #ff7a3c 0%, #ff4070 50%, #d62fff 100%);
   padding: 1rem 1.25rem;
   text-align: center;
+  justify-content: center;
   opacity: 0.92;
   align-items: center;
 }
