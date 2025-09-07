@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import Feed from './Feed';
+import Feed from './feed';
 import DataContext from '../../../hooks/datacontext';
 
 const Home = () =>
