@@ -1,0 +1,221 @@
+
+/* social media styling using nornal css style  */
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{min-height:100vh;display:flex;background:linear-gradient(135deg,#1e0036 0%,#090d1a 60%,#000 100%);font-family:'Open Sans',sans-serif}
+#root{flex:1;display:flex;justify-content:center;align-items:center}
+
+.App{
+  width:100%;max-width:900px;height:100vh;display:flex;flex-direction:column;border-radius:20px;overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.55)
+} 
+
+/* header/footer */
+.Header,.Footer{
+  width:100%;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;color:#140018;
+  background:linear-gradient(90deg,#ff9a3c 0%,#ff5858 50%,#ff2aa0 100%);text-shadow:0 1px 0 rgba(255,255,255,.25)
+}
+.Header h1{font-weight:700}
+.Footer{color:#140018}
+
+/* nav */
+ .Nav{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 1rem;
+  background:linear-gradient(180deg,#121522 0%,#0f1320 100%);border-bottom:1px solid rgba(255,255,255,.06)
+}
+.searchForm{flex:1;max-width:520px}
+.searchForm label{position:absolute;left:-9999px}
+.searchForm input[type="text"]{
+  width:100%;min-height:46px;padding:.6rem .9rem;border-radius:12px;border:1px solid rgba(255,255,255,.14);
+  background:linear-gradient(180deg,#14192b 0%,#0e1426 100%);color:#f1f6ff;outline:none;
+  transition:box-shadow .2s ease,border .2s ease,transform .08s ease
+}
+.searchForm input[type="text"]:focus{
+  border-color:#ff6bd6;box-shadow:0 0 0 4px rgba(255,107,214,.18);transform:translateY(-1px)
+}
+.Nav ul{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.Nav li a{
+  display:block;color:#f7f9ff;text-decoration:none;padding:.55rem .9rem;border-radius:10px;
+  background:transparent;transition:background .2s ease, transform .08s ease
+} 
+.Nav li a:hover{background:linear-gradient(135deg,rgba(255,154,60,.25),rgba(255,42,160,.25));transform:translateY(-1px)}
+
+/* pages */
+.Home,
+.NewPost,
+.PostPage,
+.about,
+.Missing {
+  flex: 1;  
+  overflow: auto;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, #0b0f1a 0%, #0a0e19 60%, #0a0e18 100%);
+  color: #e9efff;
+}
+
+
+/* Footer fixed at bottom */
+.Footer {
+  margin-top: auto; 
+  color: #140018;
+  background: linear-gradient(90deg, #ff7a3c 0%, #ff4070 50%, #d62fff 100%);
+  padding: 1rem 1.25rem;
+  text-align: center;
+  opacity: 0.92;
+  align-items: center;
+}
+/* posts */
+.post{margin-top:1rem;padding:1rem 0;border-bottom:1px dashed rgba(255,255,255,.12);transition:transform .12s ease}
+.post:first-child{margin-top:0;}.post:last-child{border-bottom:none}
+.Home .post a{color:#ffffff;text-decoration:none}
+.post:hover{transform:translateX(2px)}
+.postDate{
+  font-size:.8rem;
+  font-style: italic;
+  padding-top: 20px;
+  padding-right:10px;
+  padding-bottom: 20px;
+  color: #a8b2d1;
+}
+
+.postBody{margin:.7rem 0;color:#e1e7ff}
+ .post h2{
+  color:#ff69b4 ;
+ 
+ }
+/* forms */
+.Newpost h2{
+  color: white;
+}
+.newPostForm{display:flex;flex-direction:column; color:white;}
+.newPostForm label{margin-top:1rem;color:#ffb3e1}
+.newPostForm input[type='text'],.newPostForm textarea{
+  width:100%; margin-top:48px;padding:.6rem .8rem;border-radius:30px;border:1px solid rgba(255,255,255,.15);
+  background:linear-gradient(180deg,#151a2e 0%,#101528 100%);color:#f6f9ff;outline:none;transition:box-shadow .2s ease,border .2s ease
+}
+.newPostForm textarea{height:140px}
+.newPostForm input:focus,.newPostForm textarea:focus{border-color:#ff6bd6;box-shadow:0 0 0 4px rgba(255,107,214,.18)}
+.newPostForm button{
+  
+  
+  margin-top:1rem;height:48px;border:0;border-radius:30px;cursor:pointer;font-weight:700;color:#140018;
+  background:linear-gradient(135deg,#ff9a3c 0%,#ff5858 50%,#ff2aa0 100%);box-shadow:0 10px 28px rgba(255,90,140,.35);
+  transition:filter .2s ease, transform .08s ease
+}
+.newPostForm button:hover{filter:brightness(1.06);transform:translateY(-1px)}
+
+/* postpage buttons */
+/* PostPage styling */
+.PostPage {
+  color: #fff; 
+  padding: 1.5rem;
+  background: transparent;
+}
+
+.PostPage h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ff69b4; 
+}
+
+.PostPage p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+
+.PostPage button {
+  background: linear-gradient(90deg, #ff3b3b, #ff0057);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 20PX;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.PostPage button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+/* ABOUT STYLING PAGE */
+.about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 2rem;
+ background:linear-gradient(135deg,#1e0036 0%,#090d1a 60%,#000 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: whitesmoke;
+  transition: transform 0.3s ease;
+}
+
+.about:hover {
+  transform: translateY(-3px);
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about strong {
+  color: #dd2a7b;
+}
+
+.about br {
+  margin-bottom: 5px;
+}
+
+.about p:last-child {
+  text-align: center;
+  font-weight: 500;
+  color: #515bd4;
+}
+
+
+/* delete */
+.deleteButton{color:#fff;background:linear-gradient(135deg,#ff4b4b 0%,#ff1b1b 100%)}
+.editButton{color:#fff;background:linear-gradient(135deg,#5867ff 0%,#3440ff 100%)}
+.PostPage button:hover{filter:brightness(1.07);transform:translateY(-1px)}
+
+/* mising */
+.error{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.error h1{
+   color:whitesmoke;
+}
+
+  
+
+
+
+
+
+
+  
+
+@media(min-width:610px){html{font-size:20px}.newPostForm textarea{height:240px}}
+@media(min-width:992px){.Header svg{font-size:2.6rem}} 
